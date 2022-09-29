@@ -8,7 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-</head>
+</head>f
 <body>
 <%
 List<Book> list = List.of(new Book("spring", 100), new Book("sql", 500));
