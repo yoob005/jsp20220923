@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix= "c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page import="java.util.*" %>   
+<% request.setCharacterEncoding("utf-8"); %>    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>반복해서 실행/출력해야하는 코드가 있을 때 사용</h3>
+	
+	<c:forEach begin="1" end="3">
+		<%--반복 할 코드 --%>
+		<h3>Lorem.</h3>
+	</c:forEach>
+	
+	<hr>
+	
+	<c:forEach begin="1" end="3" var="idx">
+		<%-- var 속성: begin ~ end 사이의 각 값을 저장하는 el 변수 --%>
+		<p>${idx }</p>
+	</c:forEach>
+
+
+
+</body>
+</html>
