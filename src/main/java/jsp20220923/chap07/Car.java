@@ -13,6 +13,12 @@ public class Car {
 		return model;
 	}
 	
+	public Car(String model, Integer price) {
+		super();
+		this.model = model;
+		this.price = price;
+	}
+
 	// 읽을 수 있는 price 프로퍼티 결정
 	public Integer getPrice() {
 		return price;
