@@ -4,6 +4,7 @@ public class Employee {
 	private String firstName;
 	private String lastName;
 	private String Country;
+	private int id;
 	
 	public String getFirstName() {
 		return firstName;
@@ -22,5 +23,11 @@ public class Employee {
 	}
 	public void setCountry(String country) {
 		Country = country;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 }
