@@ -13,3 +13,5 @@ DELETE FROM Customers WHERE Country = 'UK';
 SELECT * FROM Customers WHERE Country = 'UK';
 DELETE FROM Customers WHERE Country = 'Mexico';
 SELECT * FROM Customers WHERE Country = 'Mexico';
+
+SELECT * FROM Customers;

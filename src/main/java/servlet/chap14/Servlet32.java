@@ -41,10 +41,10 @@ public class Servlet32 extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String idParam = request.getParameter("id");
 		int id = Integer.parseInt(idParam);
+		ServletContext application = request.getServletContext();
 		
 		String sql = "DELETE FROM Customers WHERE CustomerID = ?";
 		
-		ServletContext application = request.getServletContext();
 
 		String url = application.getAttribute("jdbc.url").toString();
 		String user = application.getAttribute("jdbc.username").toString();
